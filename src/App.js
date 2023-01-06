@@ -12,10 +12,15 @@ function App() {
     setList((prevList) => [...prevList, { id: String(++id).padStart(3, '0'), text }]);
   };
 
+  const deleteItem = (id) => {
+    const items = [...list].filter((item) => item.id !== id);
+    setList(items);
+  };
+
   return (
     <div className={styles.app}>
       <Header />
-      <List list={list} />
+      <List list={list} deleteItem={deleteItem} />
       <Footer addItem={addItem} />
     </div>
   );
