@@ -1,0 +1,21 @@
+/* size */
+@value app-width: 350px;
+@value app-height: 400px;
+@value list-width: 100%;
+@value list-height: 301px;
+@value todo-width: 300px;
+@value add-input-width: 270px;
+@value button-scale: scale(1.1);
+@value font-basic-size: 1rem;
+@value app-border-radius: 0.7rem;
+@value input-border-radius: 0.3rem;
+
+/* space-em */
+@value large-space-em: 0.8em;
+@value medium-space-em: 0.4em;
+@value small-space-em: 0.2em;
+
+/* space-rem */
+@value large-space-rem: 0.8rem;
+@value medium-space-rem: 0.4rem;
+@value small-space-rem: 0.2rem;

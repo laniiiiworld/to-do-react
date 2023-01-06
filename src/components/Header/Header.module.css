@@ -1,0 +1,34 @@
+@value large-space-em, medium-space-rem, small-space-rem, app-border-radius, button-scale from '../../common/size.css';
+@value charcoal-color, none-white-color, item-hover-color, point-color from '../../common/colors.css';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: none-white-color;
+  padding: large-space-em small-space-rem;
+  border-radius: app-border-radius app-border-radius 0 0;
+}
+
+.icons {
+  display: flex;
+  padding-right: medium-space-rem;
+}
+
+.icon {
+  margin-left: medium-space-rem;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: button-scale;
+}
+
+.icons .icon {
+  color: point-color;
+}
+
+.selected {
+  border-bottom: 2px solid charcoal-color;
+  padding-bottom: small-space-rem;
+  font-weight: bold;
+}

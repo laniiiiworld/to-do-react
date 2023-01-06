@@ -1,0 +1,16 @@
+@value app-width, app-height, app-border-radius from './common/size.css';
+@value white-color from './common/colors.css';
+
+.app {
+  width: app-width;
+  height: app-height;
+  background-color: white-color;
+  border-radius: app-border-radius;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 18px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 18px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 18px 5px rgba(0, 0, 0, 0.75);
+}

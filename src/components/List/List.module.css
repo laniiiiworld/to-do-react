@@ -1,0 +1,6 @@
+@value list-width, list-height from '../../common/size.css';
+
+.list {
+  width: list-width;
+  height: list-height;
+}
