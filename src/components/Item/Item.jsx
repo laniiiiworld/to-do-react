@@ -6,7 +6,7 @@ export default function Item({ todo }) {
   return (
     <li className={styles.item}>
       <input id='checkbox' type='checkbox' className={styles.checkbox} />
-      <span className={styles.todo}>{todo}</span>
+      <span className={styles.todo}>{todo.text}</span>
       <button className={styles.trashBtn}>
         <BsTrashFill />
       </button>

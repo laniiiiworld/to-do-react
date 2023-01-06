@@ -2,13 +2,11 @@ import React from 'react';
 import Item from '../Item/Item';
 import styles from './List.module.css';
 
-export default function List() {
-  const list = ['react 공부', '밥먹기', '잠자기'];
-
+export default function List({ list }) {
   return (
     <ul className={styles.list}>
-      {list.map((item) => (
-        <Item todo={item} />
+      {list.map((todo) => (
+        <Item key={todo.id} todo={todo} />
       ))}
     </ul>
   );
