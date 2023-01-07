@@ -12,17 +12,8 @@ export const getStorage = (key, defaultValue) => {
   }
 };
 
-/** storage에 설정 */
-export const setStorage = (key, values) => {
-  try {
-    storage.setItem(key, JSON.stringify(values));
-  } catch (error) {
-    console.log(error);
-  }
-};
-
 /** 새로운 Item을 storage에 추가 */
-export const setItemStorage = (key, value) => {
+export const addItemStorage = (key, value) => {
   const list = getStorage(key, []);
 
   //저장 가능한 길이 제한
@@ -32,6 +23,27 @@ export const setItemStorage = (key, value) => {
 
   try {
     storage.setItem(key, JSON.stringify([...list, value]));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+/** deleteId에 해당하는 item 삭제 */
+export const removeItemStorage = (key, deleteId) => {
+  const list = getStorage(key, []);
+  try {
+    storage.setItem(key, JSON.stringify(list.filter((item) => item.id !== deleteId)));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+/** 해당하는 Item check여부 업데이트 */
+export const setItemStorage = (key, todo) => {
+  const list = getStorage(key, []);
+  const items = list.map((item) => (item.id !== todo.id ? item : { ...item, isChecked: !todo.isChecked }));
+  try {
+    storage.setItem(key, JSON.stringify(items));
   } catch (error) {
     console.log(error);
   }
