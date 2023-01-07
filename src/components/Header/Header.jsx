@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { BsSun, BsMoonFill } from 'react-icons/bs';
+import { DarkModeContext } from '../../context/DarkModeContext';
 import styles from './Header.module.css';
 
 export default function Header({ applyFilter }) {
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
   const [icons, setIcons] = useState([
     { isClicked: true, name: 'All', type: 'A' },
     { isClicked: false, name: 'Active', type: 'N' },
     { isClicked: false, name: 'Completed', type: 'Y' },
   ]);
+
+  const handleDarkMode = () => {
+    toggleDarkMode();
+  };
 
   const handelIconsClick = (e) => {
     if (e.target.tagName !== 'LI') return;
@@ -17,10 +23,9 @@ export default function Header({ applyFilter }) {
   };
 
   return (
-    <header className={styles.header}>
-      <div className={styles.icon}>
-        <BsSun />
-        {/* <BsMoonFill /> */}
+    <header className={`${styles.header} ${darkMode ? styles.dark : ''}`}>
+      <div className={styles.icon} onClick={handleDarkMode}>
+        {darkMode ? <BsSun /> : <BsMoonFill />}
       </div>
       <ul className={styles.icons} onClick={handelIconsClick}>
         {icons.map((icon) => (

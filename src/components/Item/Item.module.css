@@ -1,5 +1,5 @@
 @value button-scale, font-basic-size, todo-width, medium-space-em, medium-space-rem from '../../common/size.css';
-@value white-color, item-before-color, item-hover-color, point-color from '../../common/colors.css';
+@value dark-trashBtn-color, dark-font-color, white-color, item-before-color, item-hover-color, point-color from '../../common/colors.css';
 
 .item {
   padding: medium-space-em medium-space-rem;
@@ -23,6 +23,7 @@
   height: 1.5em;
   border-radius: 50%;
   border: 1px solid item-before-color;
+  background-color: white-color;
   cursor: pointer;
 }
 .checkbox:hover {
@@ -44,6 +45,11 @@
   width: 2em;
   height: 2em;
   border-radius: 50%;
+}
+
+.dark .trashBtn {
+  background: dark-trashBtn-color;
+  color: dark-font-color;
 }
 
 .trashBtn:hover {

@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import List from './components/List/List';
+import { DarkModeProvider } from './context/DarkModeContext';
 import { getStorage, removeItemStorage, addItemStorage, setItemStorage } from './storage';
 
 let id = 0;
@@ -51,11 +52,13 @@ function App() {
   };
 
   return (
-    <div className={styles.app}>
-      <Header applyFilter={applyFilter} />
-      <List list={list} deleteItem={deleteItem} handelCheckbox={handelCheckbox} />
-      <Footer addItem={addItem} />
-    </div>
+    <DarkModeProvider>
+      <div className={styles.app}>
+        <Header applyFilter={applyFilter} />
+        <List list={list} deleteItem={deleteItem} handelCheckbox={handelCheckbox} />
+        <Footer addItem={addItem} />
+      </div>
+    </DarkModeProvider>
   );
 }
 

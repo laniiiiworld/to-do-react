@@ -1,6 +1,12 @@
+@value dark-body-color, dark-font-color from '../../common/colors.css';
 @value list-width, list-height from '../../common/size.css';
 
 .list {
   width: list-width;
   height: list-height;
+}
+
+.list.dark {
+  background-color: dark-body-color;
+  color: dark-font-color;
 }

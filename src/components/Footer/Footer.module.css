@@ -1,11 +1,16 @@
 @value large-space-rem, input-border-radius, font-basic-size, add-input-width, large-space-em, medium-space-em, medium-space-rem, app-border-radius, button-scale from '../../common/size.css';
-@value white-color, none-white-color, item-before-color, item-hover-color, point-color from '../../common/colors.css';
+@value dark-body-point-color, dark-font-color, white-color, none-white-color, item-before-color, item-hover-color, point-color from '../../common/colors.css';
 
 .footer {
   background-color: none-white-color;
   padding: large-space-em 0;
   text-align: center;
   border-radius: 0 0 app-border-radius app-border-radius;
+}
+
+.footer.dark {
+  background-color: dark-body-point-color;
+  color: dark-font-color;
 }
 
 .input {

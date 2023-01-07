@@ -5,3 +5,9 @@
 @value item-before-color: #bcbbc0;
 @value item-hover-color: #9a9ea4;
 @value point-color: #f16f04;
+
+/* dark mode */
+@value dark-body-color: #201d35;
+@value dark-body-point-color: #050023;
+@value dark-font-color: #f8f8f8;
+@value dark-trashBtn-color: #454755;

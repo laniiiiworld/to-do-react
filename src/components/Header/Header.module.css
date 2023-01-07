@@ -1,5 +1,5 @@
 @value large-space-em, medium-space-rem, small-space-rem, app-border-radius, button-scale from '../../common/size.css';
-@value charcoal-color, none-white-color, item-hover-color, point-color from '../../common/colors.css';
+@value dark-body-point-color, dark-font-color, charcoal-color, none-white-color, item-hover-color, point-color from '../../common/colors.css';
 
 .header {
   display: flex;
@@ -7,6 +7,11 @@
   background-color: none-white-color;
   padding: large-space-em small-space-rem;
   border-radius: app-border-radius app-border-radius 0 0;
+}
+
+.header.dark {
+  background-color: dark-body-point-color;
+  color: dark-font-color;
 }
 
 .icons {
