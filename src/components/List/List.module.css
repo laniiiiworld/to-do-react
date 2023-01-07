@@ -4,6 +4,7 @@
 .list {
   width: list-width;
   height: list-height;
+  overflow-y: auto;
 }
 
 .list.dark {
