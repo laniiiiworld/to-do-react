@@ -11,6 +11,9 @@
 
 .header.dark {
   background-color: dark-body-point-color;
+}
+
+.dark .theme {
   color: dark-font-color;
 }
 
@@ -19,16 +22,22 @@
   padding-right: medium-space-rem;
 }
 
+.theme,
 .icon {
   margin-left: medium-space-rem;
   cursor: pointer;
 }
 
+.theme:hover,
 .icon:hover {
   transform: button-scale;
 }
 
-.icons .icon {
+.theme {
+  background: transparent;
+}
+
+.icon {
   color: point-color;
 }
 
