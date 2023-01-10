@@ -1,6 +1,6 @@
 .list {
   width: var(--list-width);
-  height: var(--list-height);
+  flex: 1 1 auto;
   overflow-y: auto;
 }
 

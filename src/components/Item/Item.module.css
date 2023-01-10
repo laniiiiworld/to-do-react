@@ -23,6 +23,7 @@
   background-color: var(--white-color);
   cursor: pointer;
 }
+
 .checkbox:hover {
   border-color: var(--item-hover-color);
   background-color: var(--none-white-color);
@@ -50,5 +51,6 @@
 }
 
 .trashBtn:hover {
-  transform: var(--button-scale);
+  background-color: var(--point-color);
+  transform: var(--button-scale) rotate(15deg);
 }

@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--none-white-color);
-  padding: var(--large-space-em) 0;
-  text-align: center;
+  padding: var(--large-space-em) var(--large-space-rem);
+  display: flex;
 }
 
 .footer.dark {
@@ -10,10 +10,11 @@
 }
 
 .input {
-  width: var(--add-input-width);
+  flex: 1 1 auto;
   padding: var(--medium-space-em) var(--medium-space-rem);
   font-size: var(--font-basic-size);
-  border-radius: var(--input-border-radius);
+  border-top-left-radius: var(--input-border-radius);
+  border-bottom-left-radius: var(--input-border-radius);
   border: 0.5px solid var(--item-before-color);
 }
 
@@ -26,10 +27,11 @@
   padding: var(--medium-space-em) var(--large-space-rem);
   font-size: var(--font-basic-size);
   background-color: var(--point-color);
-  border-radius: var(--input-border-radius);
+  border-top-right-radius: var(--input-border-radius);
+  border-bottom-right-radius: var(--input-border-radius);
   color: var(--none-white-color);
 }
 
 .addBtn:hover {
-  transform: var(--button-scale);
+  filter: brightness(125%);
 }

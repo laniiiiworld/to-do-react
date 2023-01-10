@@ -3,6 +3,7 @@
   justify-content: space-between;
   background-color: var(--none-white-color);
   padding: var(--large-space-em) var(--small-space-rem);
+  border-bottom: 1px solid var(--item-hover-color);
 }
 
 .header.dark {
@@ -18,27 +19,33 @@
   padding-right: var(--medium-space-rem);
 }
 
-.theme,
-.icon {
+.theme {
+  background: transparent;
   margin-left: var(--medium-space-rem);
   cursor: pointer;
 }
 
-.theme:hover,
-.icon:hover {
+.theme:hover {
   transform: var(--button-scale);
-}
-
-.theme {
-  background: transparent;
+  color: var(--point-color);
 }
 
 .icon {
   color: var(--point-color);
+  margin-left: var(--medium-space-rem);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.icon:hover {
+  font-weight: bold;
+  opacity: 1;
+  filter: brightness(125%);
 }
 
 .selected {
   border-bottom: 2px solid var(--charcoal-color);
   padding-bottom: var(--small-space-rem);
   font-weight: bold;
+  opacity: 1;
 }

@@ -12,13 +12,14 @@
   --dark-body-color: #201d35;
   --dark-body-point-color: #050023;
   --dark-font-color: #f8f8f8;
-  --dark-trashbtn-color: #454755;
+  --dark-trashBtn-color: #454755;
 
   /* size */
-  --app-width: 350px;
-  --app-height: 400px;
+  --app-max-width: 350px;
+  --app-width: 100%;
+  --app-height: 60%;
   --list-width: 100%;
-  --list-height: 301px;
+  --list-height: 295px;
   --todo-width: 300px;
   --add-input-width: 270px;
   --button-scale: scale(1.1);
@@ -46,6 +47,7 @@ body {
 }
 
 #root {
+  max-width: var(--app-max-width);
   width: var(--app-width);
   height: var(--app-height);
   background-color: var(--white-color);
@@ -54,6 +56,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  display: flex;
+  flex-direction: column;
   transform: translate(-50%, -50%);
   box-shadow: 10px 10px 18px 5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 18px 5px rgba(0, 0, 0, 0.75);
