@@ -8,7 +8,8 @@ export default function Footer({ addItem }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addItem(text);
+    if (!text.trim()) return;
+    addItem(text.trim());
     setText('');
   };
   const handleChange = (e) => setText(e.target.value);
