@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import styles from './App.module.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -6,14 +7,11 @@ import List from './components/List/List';
 import { DarkModeProvider } from './context/DarkModeContext';
 import { getStorage, removeItemStorage, addItemStorage, setItemStorage } from './storage';
 
-let id = 0;
 function App() {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    const items = getStorage('todoList', []);
-    id = items.reduce((max, cur) => (max = Math.max(max, Number(cur.id))), 0);
-    setList(items);
+    setList(getStorage('todoList', []));
   }, []);
 
   const applyFilter = (type) => {
@@ -33,7 +31,7 @@ function App() {
     }
   };
   const addItem = (text) => {
-    const item = { isChecked: false, id: String(++id).padStart(3, '0'), text };
+    const item = { isChecked: false, id: uuidv4(), text };
     addItemStorage('todoList', item);
     setList((prevList) => [...prevList, item]);
   };
