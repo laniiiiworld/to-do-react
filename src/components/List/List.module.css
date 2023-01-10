@@ -1,13 +1,10 @@
-@value dark-body-color, dark-font-color from '../../common/colors.css';
-@value list-width, list-height from '../../common/size.css';
-
 .list {
-  width: list-width;
-  height: list-height;
+  width: var(--list-width);
+  height: var(--list-height);
   overflow-y: auto;
 }
 
 .list.dark {
-  background-color: dark-body-color;
-  color: dark-font-color;
+  background-color: var(--dark-body-color);
+  color: var(--dark-font-color);
 }

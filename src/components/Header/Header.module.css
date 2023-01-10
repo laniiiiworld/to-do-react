@@ -1,36 +1,33 @@
-@value large-space-em, medium-space-rem, small-space-rem, app-border-radius, button-scale from '../../common/size.css';
-@value dark-body-point-color, dark-font-color, charcoal-color, none-white-color, item-hover-color, point-color from '../../common/colors.css';
-
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: none-white-color;
-  padding: large-space-em small-space-rem;
-  border-radius: app-border-radius app-border-radius 0 0;
+  background-color: var(--none-white-color);
+  padding: var(--large-space-em) var(--small-space-rem);
+  border-radius: var(--app-border-radius) var(--app-border-radius) 0 0;
 }
 
 .header.dark {
-  background-color: dark-body-point-color;
+  background-color: var(--dark-body-point-color);
 }
 
 .dark .theme {
-  color: dark-font-color;
+  color: var(--dark-font-color);
 }
 
 .icons {
   display: flex;
-  padding-right: medium-space-rem;
+  padding-right: var(--medium-space-rem);
 }
 
 .theme,
 .icon {
-  margin-left: medium-space-rem;
+  margin-left: var(--medium-space-rem);
   cursor: pointer;
 }
 
 .theme:hover,
 .icon:hover {
-  transform: button-scale;
+  transform: var(--button-scale);
 }
 
 .theme {
@@ -38,11 +35,11 @@
 }
 
 .icon {
-  color: point-color;
+  color: var(--point-color);
 }
 
 .selected {
-  border-bottom: 2px solid charcoal-color;
-  padding-bottom: small-space-rem;
+  border-bottom: 2px solid var(--charcoal-color);
+  padding-bottom: var(--small-space-rem);
   font-weight: bold;
 }

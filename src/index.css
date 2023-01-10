@@ -1,9 +1,48 @@
+:root {
+  /* colors */
+  --light-charcoal-color: #454755;
+  --charcoal-color: #1a1a1a;
+  --white-color: #ffffff;
+  --none-white-color: #f8f8f8;
+  --item-before-color: #bcbbc0;
+  --item-hover-color: #9a9ea4;
+  --point-color: #f16f04;
+
+  /* dark mode */
+  --dark-body-color: #201d35;
+  --dark-body-point-color: #050023;
+  --dark-font-color: #f8f8f8;
+  --dark-trashbtn-color: #454755;
+
+  /* size */
+  --app-width: 350px;
+  --app-height: 400px;
+  --list-width: 100%;
+  --list-height: 301px;
+  --todo-width: 300px;
+  --add-input-width: 270px;
+  --button-scale: scale(1.1);
+  --font-basic-size: 1rem;
+  --app-border-radius: 0.7rem;
+  --input-border-radius: 0.3rem;
+
+  /* space-em */
+  --large-space-em: 0.8em;
+  --medium-space-em: 0.4em;
+  --small-space-em: 0.2em;
+
+  /* space-rem */
+  --large-space-rem: 0.8rem;
+  --medium-space-rem: 0.4rem;
+  --small-space-rem: 0.2rem;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #454755;
+  background-color: var(--light-charcoal-color);
 }
 
 code {

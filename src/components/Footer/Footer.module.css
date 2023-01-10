@@ -1,39 +1,36 @@
-@value large-space-rem, input-border-radius, font-basic-size, add-input-width, large-space-em, medium-space-em, medium-space-rem, app-border-radius, button-scale from '../../common/size.css';
-@value dark-body-point-color, dark-font-color, white-color, none-white-color, item-before-color, item-hover-color, point-color from '../../common/colors.css';
-
 .footer {
-  background-color: none-white-color;
-  padding: large-space-em 0;
+  background-color: var(--none-white-color);
+  padding: var(--large-space-em) 0;
   text-align: center;
-  border-radius: 0 0 app-border-radius app-border-radius;
+  border-radius: 0 0 var(--app-border-radius) var(--app-border-radius);
 }
 
 .footer.dark {
-  background-color: dark-body-point-color;
-  color: dark-font-color;
+  background-color: var(--dark-body-point-color);
+  color: var(--dark-font-color);
 }
 
 .input {
-  width: add-input-width;
-  padding: medium-space-em medium-space-rem;
-  font-size: font-basic-size;
-  border-radius: input-border-radius;
-  border: 0.5px solid item-before-color;
+  width: var(--add-input-width);
+  padding: var(--medium-space-em) var(--medium-space-rem);
+  font-size: var(--font-basic-size);
+  border-radius: var(--input-border-radius);
+  border: 0.5px solid var(--item-before-color);
 }
 
 .input:hover,
 .input:focus {
-  outline: 0.5px solid point-color;
+  outline: 0.5px solid var(--point-color);
 }
 
 .addBtn {
-  padding: medium-space-em large-space-rem;
-  font-size: font-basic-size;
-  background-color: point-color;
-  border-radius: input-border-radius;
-  color: none-white-color;
+  padding: var(--medium-space-em) var(--large-space-rem);
+  font-size: var(--font-basic-size);
+  background-color: var(--point-color);
+  border-radius: var(--input-border-radius);
+  color: var(--none-white-color);
 }
 
 .addBtn:hover {
-  transform: button-scale;
+  transform: var(--button-scale);
 }
