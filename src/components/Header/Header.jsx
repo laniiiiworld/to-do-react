@@ -24,7 +24,7 @@ export default function Header({ applyFilter }) {
 
   return (
     <header className={`${styles.header} ${darkMode ? styles.dark : ''}`}>
-      <button className={styles.theme} onClick={handleDarkMode} title='theme button'>
+      <button className={styles.theme} onClick={handleDarkMode} title={`Switch to ${darkMode ? 'light' : 'dark'} mode button`}>
         {darkMode ? <BsSun /> : <BsMoonFill />}
       </button>
       <ul className={styles.icons} onClick={handelIconsClick}>

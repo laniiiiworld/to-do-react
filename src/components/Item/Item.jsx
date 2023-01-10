@@ -18,7 +18,7 @@ export default function Item({ todo, deleteItem, handelCheckbox }) {
     <li className={`${styles.item} ${darkMode ? styles.dark : ''}`}>
       <input id='checkbox' type='checkbox' className={styles.checkbox} onChange={handleChange} checked={todo.isChecked} />
       <span className={styles.todo}>{todo.text}</span>
-      <button className={styles.trashBtn} onClick={handleClick}>
+      <button className={styles.trashBtn} onClick={handleClick} title='delete button'>
         {darkMode ? <BsTrash /> : <BsTrashFill />}
       </button>
     </li>

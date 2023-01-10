@@ -30,7 +30,6 @@ function App() {
         break;
       default:
         throw new Error(`'${type}'은 정의되지 않은 타입입니다.`);
-        break;
     }
   };
   const addItem = (text) => {
