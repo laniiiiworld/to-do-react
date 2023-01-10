@@ -2,7 +2,6 @@
   background-color: var(--none-white-color);
   padding: var(--large-space-em) 0;
   text-align: center;
-  border-radius: 0 0 var(--app-border-radius) var(--app-border-radius);
 }
 
 .footer.dark {

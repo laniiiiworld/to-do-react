@@ -3,7 +3,6 @@
   justify-content: space-between;
   background-color: var(--none-white-color);
   padding: var(--large-space-em) var(--small-space-rem);
-  border-radius: var(--app-border-radius) var(--app-border-radius) 0 0;
 }
 
 .header.dark {
