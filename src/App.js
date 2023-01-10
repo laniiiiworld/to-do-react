@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import styles from './App.module.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import List from './components/List/List';
@@ -50,11 +49,11 @@ function App() {
 
   return (
     <DarkModeProvider>
-      <div className={styles.app}>
+      <>
         <Header applyFilter={applyFilter} />
         <List list={list} deleteItem={deleteItem} handelCheckbox={handelCheckbox} />
         <Footer addItem={addItem} />
-      </div>
+      </>
     </DarkModeProvider>
   );
 }
