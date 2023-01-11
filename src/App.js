@@ -29,6 +29,7 @@ function App() {
         throw new Error(`'${type}'은 정의되지 않은 타입입니다.`);
     }
   };
+
   const addItem = (text) => {
     const item = { isChecked: false, id: uuidv4(), text };
     addItemStorage('todoList', item);
@@ -49,11 +50,9 @@ function App() {
 
   return (
     <DarkModeProvider>
-      <>
-        <Header applyFilter={applyFilter} />
-        <List list={list} deleteItem={deleteItem} handelCheckbox={handelCheckbox} />
-        <Footer addItem={addItem} />
-      </>
+      <Header applyFilter={applyFilter} />
+      <List list={list} deleteItem={deleteItem} handelCheckbox={handelCheckbox} />
+      <Footer addItem={addItem} />
     </DarkModeProvider>
   );
 }

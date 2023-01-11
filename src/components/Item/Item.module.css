@@ -43,11 +43,8 @@
   width: 2em;
   height: 2em;
   border-radius: 50%;
-}
-
-.dark .trashBtn {
-  background: var(--dark-trashBtn-color);
-  color: var(--dark-font-color);
+  background: var(--trashBtn-color);
+  color: var(--font-color);
 }
 
 .trashBtn:hover {

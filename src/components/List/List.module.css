@@ -2,9 +2,6 @@
   width: var(--list-width);
   flex: 1 1 auto;
   overflow-y: auto;
-}
-
-.list.dark {
-  background-color: var(--dark-body-color);
-  color: var(--dark-font-color);
+  background-color: var(--body-color);
+  color: var(--font-color);
 }

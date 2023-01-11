@@ -1,12 +1,8 @@
 .footer {
-  background-color: var(--none-white-color);
+  background-color: var(--body-point-color);
+  color: var(--font-color);
   padding: var(--large-space-em) var(--large-space-rem);
   display: flex;
-}
-
-.footer.dark {
-  background-color: var(--dark-body-point-color);
-  color: var(--dark-font-color);
 }
 
 .input {

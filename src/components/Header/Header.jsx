@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { BsSun, BsMoonFill } from 'react-icons/bs';
-import { DarkModeContext } from '../../context/DarkModeContext';
+import { useDarkMode } from '../../context/DarkModeContext';
 import styles from './Header.module.css';
 
 export default function Header({ applyFilter }) {
-  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  const { darkMode, toggleDarkMode } = useDarkMode();
   const [icons, setIcons] = useState([
     { isClicked: true, name: 'All', type: 'A' },
     { isClicked: false, name: 'Active', type: 'N' },
@@ -23,7 +23,7 @@ export default function Header({ applyFilter }) {
   };
 
   return (
-    <header className={`${styles.header} ${darkMode ? styles.dark : ''}`}>
+    <header className={styles.header}>
       <button className={styles.theme} onClick={handleDarkMode} title={`Switch to ${darkMode ? 'light' : 'dark'} mode button`}>
         {darkMode ? <BsSun /> : <BsMoonFill />}
       </button>

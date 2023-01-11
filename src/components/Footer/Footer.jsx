@@ -1,9 +1,7 @@
-import React, { useContext, useState } from 'react';
-import { DarkModeContext } from '../../context/DarkModeContext';
+import React, { useState } from 'react';
 import styles from './Footer.module.css';
 
 export default function Footer({ addItem }) {
-  const { darkMode } = useContext(DarkModeContext);
   const [text, setText] = useState('');
 
   const handleSubmit = (e) => {
@@ -15,7 +13,7 @@ export default function Footer({ addItem }) {
   const handleChange = (e) => setText(e.target.value);
 
   return (
-    <form className={`${styles.footer} ${darkMode ? styles.dark : ''}`} onSubmit={handleSubmit}>
+    <form className={styles.footer} onSubmit={handleSubmit}>
       <input type='text' className={styles.input} placeholder='ADD Todo' value={text} onChange={handleChange} />
       <button className={styles.addBtn} title='add button'>
         Add

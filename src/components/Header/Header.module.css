@@ -1,17 +1,9 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--none-white-color);
+  background-color: var(--body-point-color);
   padding: var(--large-space-em) var(--small-space-rem);
   border-bottom: 1px solid var(--item-hover-color);
-}
-
-.header.dark {
-  background-color: var(--dark-body-point-color);
-}
-
-.dark .theme {
-  color: var(--dark-font-color);
 }
 
 .icons {
@@ -23,6 +15,7 @@
   background: transparent;
   margin-left: var(--medium-space-rem);
   cursor: pointer;
+  color: var(--font-color);
 }
 
 .theme:hover {
