@@ -1,5 +1,5 @@
 .item {
-  padding: var(--medium-space-em) var(--medium-space-rem);
+  padding: var(--medium-space-em) var(--large-space-rem);
   font-size: var(--font-basic-size);
   display: flex;
   align-items: center;

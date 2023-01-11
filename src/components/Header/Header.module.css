@@ -6,7 +6,7 @@
   border-bottom: 1px solid var(--item-hover-color);
 }
 
-.icons {
+.filters {
   display: flex;
   padding-right: var(--medium-space-rem);
 }
@@ -23,22 +23,28 @@
   color: var(--point-color);
 }
 
-.icon {
+.filter {
+  background-color: transparent;
   color: var(--point-color);
-  margin-left: var(--medium-space-rem);
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.7;
+  font-size: var(--font-basic-size);
+  font-weight: bold;
+  padding: 0 var(--small-space-rem);
 }
 
-.icon:hover {
+.filter:hover {
   font-weight: bold;
   opacity: 1;
-  filter: brightness(125%);
 }
 
 .selected {
-  border-bottom: 2px solid var(--charcoal-color);
-  padding-bottom: var(--small-space-rem);
-  font-weight: bold;
   opacity: 1;
+}
+
+.filter.selected::after {
+  content: '';
+  display: block;
+  margin-top: var(--small-space-rem);
+  border: 1.5px solid var(--item-hover-color);
 }
