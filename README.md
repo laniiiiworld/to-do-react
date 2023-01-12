@@ -3,6 +3,10 @@
 - git과 react, cypress 학습한 내용을 적용하여 투두앱 구축
 - DEMO : https://lani-todo-react.netlify.app/
 
+## 사용기술
+
+- React, PostCSS
+
 ## 개발목표
 
 - useEffect에서 localStorage를 다룰 수 있다.
@@ -10,9 +14,9 @@
 - branch, rebase, tag 등의 git 명령어를 사용할 수 있다.
 - cypress로 E2E 테스트 코드를 작성할 수 있다.
 
-## 사용기술
+## 개발기간
 
-- React, PostCSS
+- 2023.01.05 ~ 2023.01.12 (8일)
 
 ## Advanced Feature
 
