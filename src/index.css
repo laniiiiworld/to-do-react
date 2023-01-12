@@ -23,6 +23,8 @@
   --todo-width: 300px;
   --add-input-width: 270px;
   --button-scale: scale(1.1);
+  --checkbox-size: 20px;
+  --trashBtn-min-size: 25px;
   --font-basic-size: 1rem;
   --app-border-radius: 0.7rem;
   --input-border-radius: 0.3rem;

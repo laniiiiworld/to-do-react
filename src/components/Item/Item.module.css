@@ -11,13 +11,13 @@
   color: var(--white-color);
   text-align: center;
   line-height: 24px;
-  padding-left: 0.2rem;
+  padding-left: 0.15rem;
 }
 
 .checkbox {
   appearance: none;
-  width: 1.5em;
-  height: 1.5em;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
   border-radius: 50%;
   border: 1px solid var(--item-before-color);
   background-color: var(--white-color);
@@ -40,8 +40,11 @@
 }
 
 .trashBtn {
-  width: 2em;
-  height: 2em;
+  min-width: var(--trashBtn-min-size);
+  min-height: var(--trashBtn-min-size);
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: calc(var(--font-basic-size) * 0.85);
   border-radius: 50%;
   background: var(--trashBtn-color);
   color: var(--font-color);

@@ -16,6 +16,7 @@
   margin-left: var(--medium-space-rem);
   cursor: pointer;
   color: var(--font-color);
+  font-size: var(--font-basic-size);
 }
 
 .theme:hover {
